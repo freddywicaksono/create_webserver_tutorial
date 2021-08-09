@@ -5,3 +5,7 @@
 2. Install Apache
 
     https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-id
+
+3. Activate User Directory, every user will have their own directory. Example: http://<ip_server>/~user
+
+    https://www.server-world.info/en/note?os=Ubuntu_20.04&p=httpd&f=4
