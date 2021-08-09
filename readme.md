@@ -52,3 +52,13 @@
    Give the user to access and manage the database:
     
         > grant all privileges on [database_name].* to '[username]'@'%' identified by '[user_passwd]';
+    
+   Add port 3306 to firewall:
+    
+        sudo ufw allow 3306/tcp
+   
+   Reload Firewall:
+    
+        sudo ufw disable
+    
+        sudo ufw enable
