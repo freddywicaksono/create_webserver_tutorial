@@ -14,16 +14,16 @@
 
     edit file : php*.conf
     
-    sudo nano /etc/apache2/mods-available/php*.conf
+        sudo nano /etc/apache2/mods-available/php*.conf
     
     Change : 
     
-    php_admin_flag engine Off --> php_admin_flag engine On
+        php_admin_flag engine Off --> php_admin_flag engine On
     Save: Crtl-O <enter>
     
     Exit: Ctrl-X
     
     restart apache:
     
-    sudo systemctl restart apache2
+        sudo systemctl restart apache2
     
