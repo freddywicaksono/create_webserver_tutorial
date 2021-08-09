@@ -78,7 +78,8 @@
         
         sudo apt install phpmyadmin
         
-        
+   When prompted to choose the webserver, selecat apache2 and continue.    
+   
         +------------------------+ Configuring phpmyadmin +-------------------------+
         | Please choose the web server that should be automatically configured to   |
         | run phpMyAdmin.                                                           |  
@@ -88,3 +89,31 @@
         |    [ ] lighttpd                                                           |    
         |                                 <ok>                                      |
         +---------------------------------------------------------------------------+
+        
+   When prompted again to allow debconfig-common to install a database and configure select No.
+   
+        +------------------------+ Configuring phpmyadmin +-------------------------+
+        |                                                                           |
+        | The phpmyadmin package must have a database installed and configured      |
+        | before it can be used.  This can be optionally handled with               |
+        | dbconfig-common.                                                          |
+        |                                                                           |
+        | If you are an advanced database administrator and know that you want to   |
+        | perform this configuration manually, or if your database has already      |
+        | been installed and configured, you should refuse this option.  Details    |
+        | on what needs to be done should most likely be provided in                |
+        | /usr/share/doc/phpmyadmin.                                                |
+        |                                                                           |
+        | Otherwise, you should probably choose this option.                        |
+        |                                                                           |
+        | Configure database for phpmyadmin with dbconfig-common?                   |
+        |                                                                           |
+        |                  <Yes>                  <No>                              |
+        |                                                                           |
+        +---------------------------------------------------------------------------+
+        
+  After installing, run the commands below to logon to the database server to enable phpMyAdmin root logon.
+
+  Now, open your web browser and login to the server hostname or IP address followed by phpmyadmin
+
+        http://localhost/phpmyadmin
