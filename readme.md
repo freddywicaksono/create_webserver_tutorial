@@ -69,7 +69,7 @@
     
    change:
 
-        bind-address = 127.0.0.1 menjadi 0.0.0.0
+        bind-address = 127.0.0.1 --> 0.0.0.0
     
    Reload Mariadb:
     
