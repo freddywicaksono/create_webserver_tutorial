@@ -72,3 +72,19 @@
     
         sudo systemctl restart mysql
 
+8. Install PHPMyAdmin
+
+        sudo apt update
+        
+        sudo apt install phpmyadmin
+        
+        
+        +------------------------+ Configuring phpmyadmin +-------------------------+
+ | Please choose the web server that should be automatically configured to   |
+ | run phpMyAdmin.                                                           |  
+ | Web server to reconfigure automatically:                                  |
+ |                                                                           |
+ |    [*] apache2                                                            |
+ |    [ ] lighttpd                                                           |                                                 | 
+ |                                 <ok>                                                                            |
+ +---------------------------------------------------------------------------+
