@@ -62,3 +62,16 @@
         sudo ufw disable
     
         sudo ufw enable
+    
+   Edit file : 50-server.cnf
+    
+        sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+    
+   change:
+
+        bind-address = 127.0.0.1 menjadi 0.0.0.0
+    
+   Reload Mariadb:
+    
+        sudo systemctl restart mysql
+
