@@ -39,7 +39,7 @@
     
     https://computingforgeeks.com/how-to-install-mariadb-on-ubuntu-focal-fossa/
     
-7. Pengaturan Remote Access Mariadb
+7. Remote Access Mariadb
     
    Create a special db user
     
