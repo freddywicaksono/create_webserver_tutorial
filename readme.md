@@ -23,3 +23,7 @@
     
     Exit: Ctrl-X
     
+    restart apache:
+    
+    sudo systemctl restart apache2
+    
