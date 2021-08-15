@@ -311,17 +311,17 @@
 	
 12. Check firewall status
 
-	sudo ufw status
+		sudo ufw status
 	
 13. Reload Firewall
 
-	sudo ufw disable
+		sudo ufw disable
 	
-	sudo ufw enable
+		sudo ufw enable
 	
 14. edit file konfigurasi ftp
 
-	sudo nano /etc/vsftpd.conf
+		sudo nano /etc/vsftpd.conf
 	
 	
 
@@ -351,4 +351,4 @@
 	
 15. Restart vsftpd
 	
-	sudo systemctl restart vsftpd
+		sudo systemctl restart vsftpd
