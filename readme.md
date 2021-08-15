@@ -141,7 +141,47 @@
     
     
 6. Install Mariadb 10.5
+
+        sudo apt update
+        
+        sudo apt -y install software-properties-common
+        
+        sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+        
+        sudo add-apt-repository 'deb [arch=amd64] http://mariadb.mirror.globo.tech/repo/10.5/ubuntu focal main'
+        
+        sudo apt update
+        
+        sudo apt install mariadb-server mariadb-client
+        
+        sudo mysql_secure_installation
+        
+    Interactive input:
     
+        Enter current password for root (enter for none): <press enter>
+        
+	    Switch to unix_socket authentication [Y/n] y
+
+        Change the root password? [Y/n] y
+        
+        New password: <fill it>
+        
+        Re-enter new password:<fill it> 
+
+        Remove anonymous users? [Y/n] y
+        
+        Disallow root login remotely? [Y/n] n
+        
+        Remove test database and access to it? [Y/n] y
+        
+        Reload privilege tables now? [Y/n] y
+        
+    Test login:
+    
+        mysql -u root -p <press enter>
+        
+        password: <fill it> <press enter>
+           
     https://computingforgeeks.com/how-to-install-mariadb-on-ubuntu-focal-fossa/
     
 7. Remote Access Mariadb
