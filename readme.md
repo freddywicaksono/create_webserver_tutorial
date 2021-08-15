@@ -113,6 +113,24 @@
     restart apache:
     
         sudo systemctl restart apache2
+        
+    create a simple php script for testing purposes:
+    this user should have public_html directory, if not create it first 
+    
+        cd /home/[user name]/public_html
+        
+        sudo touch test.php
+        
+        sudo nano test.php
+        
+        <?php
+           echo "Welcome to PHP page";
+        ?> 
+        
+    Test php script on user folder
+    
+        http://<ip server>/~[user name]/test.php
+    
     
 6. Install Mariadb 10.5
     
