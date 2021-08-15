@@ -333,34 +333,21 @@
         | write_enable=YES                                                          |
         | local_umask=022                                                           |    
         | dirmessage_enable=YES                                                     |
-        | use_localtime=YES                                                                          |
-        | xferlog_enable=YES      |
-        | connect_from_port_20=YES               |
-        | chroot_local_user=YES                                                          |
-        | secure_chroot_dir=/var/run/vsftpd/empty                                                                         |
-        | pam_service_name=vsftpd   |
-        | force_dot_files=YES      |
-        | pasv_min_port=40000    |
-        | pasv_max_port=50000                |
-        | user_sub_token=$USER                                                |
-        | local_root=/home/$USER                                                                          |
-        | allow_writeable_chroot=YES                        |
+        | use_localtime=YES                                                         |
+        | xferlog_enable=YES      						    |
+        | connect_from_port_20=YES           					    |
+        | chroot_local_user=YES                                                     |
+        | secure_chroot_dir=/var/run/vsftpd/empty                                   |
+        | pam_service_name=vsftpd   						    |
+        | force_dot_files=YES      		  				    |
+        | pasv_min_port=40000    						    |
+        | pasv_max_port=50000                					    |
+        | user_sub_token=$USER                                                      |
+        | local_root=/home/$USER                                                    |
+        | allow_writeable_chroot=YES                        			    |
         |                                                                           |
         +---------------------------------------------------------------------------+
-	| test
-	| use_localtime=YES                                                |
-	| xferlog_enable=YES                                                        |
-	| connect_from_port_20=YES                                                  |
-	| chroot_local_user=YES                                                     |
-	| secure_chroot_dir=/var/run/vsftpd/empty                                   |
-	| pam_service_name=vsftpd                                                   |
-	| force_dot_files=YES                                                       |
-	| pasv_min_port=40000                                                       |
-	| pasv_max_port=50000                                                       |
-	| user_sub_token=$USER                                                      |
-	| local_root=/home/$USER                                                    |
-	| allow_writeable_chroot=YES                                                |
-        +---------------------------------------------------------------------------+
+	
 	
 15. Restart vsftpd
 	
