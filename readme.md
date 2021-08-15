@@ -281,4 +281,4 @@
 	
   or
     
-     http://<ip server>/phpmyadmin
+        http://<ip server>/phpmyadmin
