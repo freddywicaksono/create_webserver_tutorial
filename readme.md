@@ -279,6 +279,6 @@
 
         http://localhost/phpmyadmin
 	
-    or
+  or
     
     	http://<ip server>/phpmyadmin
