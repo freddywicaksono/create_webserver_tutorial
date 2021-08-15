@@ -117,12 +117,20 @@
     create a simple php script for testing purposes:
     this user should have public_html directory, if not create it first 
     
+    Activate public_html folder
+    
         cd /home/[user name]/public_html
-        
+    
+    Create file test.php
+    
         sudo touch test.php
-        
+    
+    Edit file test.php
+    
         sudo nano test.php
-        
+    
+    Example script:
+    
         <?php
            echo "Welcome to PHP page";
         ?> 
