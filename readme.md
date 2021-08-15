@@ -333,22 +333,18 @@
         | write_enable=YES                                                          |
         | local_umask=022                                                           |    
         | dirmessage_enable=YES                                                     |
-        |                                                                           |
-        | The phpmyadmin package must have a database installed and configured      |
-        | before it can be used.  This can be optionally handled with               |
-        | dbconfig-common.                                                          |
-        |                                                                           |
-        | If you are an advanced database administrator and know that you want to   |
-        | perform this configuration manually, or if your database has already      |
-        | been installed and configured, you should refuse this option.  Details    |
-        | on what needs to be done should most likely be provided in                |
-        | /usr/share/doc/phpmyadmin.                                                |
-        |                                                                           |
-        | Otherwise, you should probably choose this option.                        |
-        |                                                                           |
-        | Configure database for phpmyadmin with dbconfig-common?                   |
-        |                                                                           |
-        |                  <Yes>                  <No>                              |
+        | use_localtime=YES                                                                          |
+        | xferlog_enable=YES      |
+        | connect_from_port_20=YES               |
+        | chroot_local_user=YES                                                          |
+        | secure_chroot_dir=/var/run/vsftpd/empty                                                                         |
+        | pam_service_name=vsftpd   |
+        | force_dot_files=YES      |
+        | pasv_min_port=40000    |
+        | pasv_max_port=50000                |
+        | user_sub_token=$USER                                                |
+        | local_root=/home/$USER                                                                          |
+        | allow_writeable_chroot=YES                        |
         |                                                                           |
         +---------------------------------------------------------------------------+
 	| test
