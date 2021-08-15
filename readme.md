@@ -10,6 +10,30 @@
         
         sudo apt install apache2
         
+    Check Apache Version:
+    
+        apache2 -version
+        
+    Add apache to Firewall
+    
+        sudo ufw allow 'Apache'
+     
+    Check Firewall status
+    
+        sudo ufw status
+        
+    Mengaktifkan Firewall
+    
+        sudo ufw enable
+        
+    Restart Apache service
+    
+        sudo service apache2 restart
+        
+    Test apache on Browser
+    
+        http://localhost    or  http://<ip server>/
+        
     https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-id
 
 3. Activate User Directory, every user will have their own directory. Example: http://<ip_server>/~user
