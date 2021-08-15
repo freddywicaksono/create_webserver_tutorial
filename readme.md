@@ -282,3 +282,69 @@
   or
     
         http://<ip server>/phpmyadmin
+	
+9. Install FTP
+
+	sudo apt update
+	
+	sudo apt install vsftpd
+	
+    FTP Status Check:
+    
+    	sudo service vsftpd status
+	
+10. Install SSH
+
+	sudo apt update
+	
+	sudo apt install openssh-server
+	
+11. Open Port for FTP and SSH
+
+    	sudo ufw allow OpenSSH
+    
+    	sudo ufw allow 20/tcp
+    
+    	sudo ufw allow 21/tcp
+    
+    	sudo ufw allow 40000:50000/tcp	
+	
+12. Check firewall status
+
+	sudo ufw status
+	
+13. Reload Firewall
+
+	sudo ufw disable
+	
+	sudo ufw enable
+	
+14. edit file konfigurasi ftp
+
+	sudo nano /etc/vsftpd.conf
+	
+	+-----------------------------------------------------------------------+
+    	| listen=NO								|
+    	| listen_ipv6=YES							|
+    	| anonymous_enable=NO							|
+    	| local_enable=YES							|
+    	| write_enable=YES							|
+    	| local_umask=022							|
+    	| dirmessage_enable=YES							|
+    	| use_localtime=YES							|
+    	| xferlog_enable=YES							|
+    	| connect_from_port_20=YES						|
+    	| chroot_local_user=YES							|
+    	| secure_chroot_dir=/var/run/vsftpd/empty				|
+    	| pam_service_name=vsftpd						|
+    	| force_dot_files=YES							|
+    	| pasv_min_port=40000							|
+    	| pasv_max_port=50000							|
+    	| user_sub_token=$USER							|
+    	| local_root=/home/$USER						|
+    	| allow_writeable_chroot=YES						|
+	+-----------------------------------------------------------------------+
+
+15. Restart vsftpd
+	
+	sudo systemctl restart vsftpd
