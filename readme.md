@@ -190,13 +190,26 @@
     
         > create user '[username]'@'%' identified by '[user_passwd]';
     
+    example:
+    
+    	> create user 'smith'@'%' identified by 'secretpass';
+    
    Create a database for the user above:
     
-        > create database '[database_name]';
+        > create database [database_name];
+        
+     example:
     
+    	> create database akademik;
+    	
+
    Give the user to access and manage the database:
     
         > grant all privileges on [database_name].* to '[username]'@'%' identified by '[user_passwd]';
+     
+     example:
+     
+     	> grant all privileges on akademik.* to 'smith'@'%' identified by 'secretpass';
     
    Add port 3306 to firewall:
     
@@ -265,3 +278,7 @@
   Now, open your web browser and login to the server hostname or IP address followed by phpmyadmin
 
         http://localhost/phpmyadmin
+	
+    or
+    
+    	http://<ip server>/phpmyadmin
