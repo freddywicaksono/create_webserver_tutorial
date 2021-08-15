@@ -349,6 +349,16 @@
     	| allow_writeable_chroot=YES						|
 	+-----------------------------------------------------------------------+
 
+        +------------------------+ Configuring phpmyadmin +-------------------------+
+        | Please choose the web server that should be automatically configured to   |
+        | run phpMyAdmin.                                                           |  
+        | Web server to reconfigure automatically:                                  |
+        |                                                                           |
+        |    [*] apache2                                                            |
+        |    [ ] lighttpd                                                           |    
+        |                                 <ok>                                      |
+        +---------------------------------------------------------------------------+
+	
 15. Restart vsftpd
 	
 	sudo systemctl restart vsftpd
