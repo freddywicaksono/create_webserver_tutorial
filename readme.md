@@ -325,9 +325,13 @@
 	
 	+-----------------------------------------------------------------------+
     	| listen=NO								|
+	|									|
     	| listen_ipv6=YES							|
+	|									|
     	| anonymous_enable=NO							|
+	|									|
     	| local_enable=YES							|
+	|									|
     	| write_enable=YES							|
     	| local_umask=022							|
     	| dirmessage_enable=YES							|
