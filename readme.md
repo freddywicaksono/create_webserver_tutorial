@@ -72,6 +72,22 @@
     
         http://localhost/~[user name]
         
+    Add New apache User:
+    
+        sudo adduser [user name]
+        
+    Example:
+    
+        sudo adduser smith
+        
+    Switch between user:
+    
+        su - [user name]
+        
+    Check active folder:
+    
+        pwd
+        
     Source:
         
     https://www.server-world.info/en/note?os=Ubuntu_20.04&p=httpd&f=4
