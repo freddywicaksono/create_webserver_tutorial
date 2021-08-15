@@ -350,13 +350,13 @@
 	+-----------------------------------------------------------------------+
 
         +------------------------+ Configuring phpmyadmin +-------------------------+
-        | Please choose the web server that should be automatically configured to   |
-        | run phpMyAdmin.                                                           |  
-        | Web server to reconfigure automatically:                                  |
+        | listen=NO   								    |
+        | listen_ipv6=YES                                                           |  
+        | anonymous_enable=NO:                                                      |
+        | local_enable=YES                                                          |
+        | write_enable=YES                                                          |
+        | local_umask=022                                                           |    
         |                                                                           |
-        |    [*] apache2                                                            |
-        |    [ ] lighttpd                                                           |    
-        |                                 <ok>                                      |
         +---------------------------------------------------------------------------+
 	
 15. Restart vsftpd
