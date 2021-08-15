@@ -37,7 +37,39 @@
     https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-id
 
 3. Activate User Directory, every user will have their own directory. Example: http://<ip_server>/~user
-
+    
+        sudo apt update
+        
+        sudo a2enmod userdir
+        
+    Restart Apache
+    
+        sudo systemctl restart apache2
+        
+    Create public_html directory for current user
+    
+        mkdir ~/public_html
+        
+    Activate public_html direcory
+    
+        cd /home/[user name]/public_html
+        
+    Create a HTML file for testing purposes
+    
+        sudo touch index.html
+        
+        sudo nano index.html
+        
+        { please write a simple html script }
+        
+    Test web page 
+    
+        http://<ip server>/~[user name]
+        
+    or 
+    
+        http://localhost/~[user name]
+        
     https://www.server-world.info/en/note?os=Ubuntu_20.04&p=httpd&f=4
 
 4. Install PHP 7.4
