@@ -29,6 +29,10 @@
     Restart Apache service
     
         sudo service apache2 restart
+	
+    Get server IP
+    
+    	hostname -I
         
     Test apache on Browser
     
