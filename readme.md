@@ -361,3 +361,9 @@
 15. Restart vsftpd
 	
 		sudo systemctl restart vsftpd
+
+16. Jika SSH tidak dapat terhubung ke server maka masukkan ssh ke dalam list firewall
+```
+sudo ufw allow ssh
+sudo ufw allow 22/tcp
+```
