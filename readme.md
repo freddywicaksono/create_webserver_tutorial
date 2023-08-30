@@ -77,7 +77,9 @@
         http://localhost/~[user name]
 
    if error forbidden:
-   	find /home/[username] -type d -exec chmod 755 {} \;
+   ```
+   find /home/[username] -type d -exec chmod 755 {} \;
+   ```
         
     Add New apache User:
     
