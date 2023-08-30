@@ -75,6 +75,9 @@
     or 
     
         http://localhost/~[user name]
+
+   if error forbidden:
+   	find /home/[username] -type d -exec chmod 755 {} \;
         
     Add New apache User:
     
@@ -96,7 +99,7 @@
         
     https://www.server-world.info/en/note?os=Ubuntu_20.04&p=httpd&f=4
 
-4. Install PHP 7.4
+5. Install PHP 7.4
 
         sudo apt update
         
@@ -104,7 +107,7 @@
                 
         sudo apt install php7.4-common php7.4-fpm php7.4-json php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd php7.4-imagick php7.4-cli php7.4-dev php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap php7.4-zip php7.4-bcmath libapache2-mod-php7.4 php7.4-intl -y
 
-5. Activate execute/run php script on user directory
+6. Activate execute/run php script on user directory
 
     edit file : php*.conf
     
@@ -144,7 +147,7 @@
         http://<ip server>/~[user name]/test.php
     
     
-6. Install Mariadb 10.5
+7. Install Mariadb 10.5
 
         sudo apt update
         
@@ -188,7 +191,7 @@
            
     https://computingforgeeks.com/how-to-install-mariadb-on-ubuntu-focal-fossa/
     
-7. Remote Access Mariadb
+8. Remote Access Mariadb
     
    Create a special db user
     
@@ -237,7 +240,7 @@
     
         sudo systemctl restart mysql
 
-8. Install PHPMyAdmin
+9. Install PHPMyAdmin
 
         sudo apt update
         
